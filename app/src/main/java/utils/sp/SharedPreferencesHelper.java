@@ -12,7 +12,7 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- * Created by zpw10018 on 2016/9/14.
+ * Created by zpw on 2016/9/14.
  */
 
 public class SharedPreferencesHelper {
@@ -286,7 +286,7 @@ public class SharedPreferencesHelper {
                 return this.putString(key, str);
             }
         } catch (Throwable var10) {
-            ;
+
         }
 
         return false;

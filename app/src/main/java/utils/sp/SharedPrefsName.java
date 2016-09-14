@@ -1,7 +1,7 @@
 package utils.sp;
 
 /**
- * Created by zpw10018 on 2016/9/14.
+ * Created by zpw on 2016/9/14.
  */
 
 public class SharedPrefsName {
