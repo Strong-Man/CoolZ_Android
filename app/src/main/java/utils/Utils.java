@@ -3,7 +3,6 @@ package utils;
 import android.content.Context;
 
 import utils.sp.SharedPreferencesHelper;
-import utils.sp.SharedPrefsNames;
 
 /**
  * Created by zpw10018 on 2016/9/14.
