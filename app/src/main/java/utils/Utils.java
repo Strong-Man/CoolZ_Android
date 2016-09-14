@@ -3,6 +3,7 @@ package utils;
 import android.content.Context;
 
 import utils.sp.SharedPreferencesHelper;
+import utils.sp.SharedPrefsName;
 
 /**
  * Created by zpw10018 on 2016/9/14.
@@ -30,7 +31,7 @@ public class Utils {
     //<!-- ui util end -->
 
     public static SharedPreferencesHelper getSpHelper(Context context) {
-        return SharedPreferencesHelper.getInstance(context, SharedPrefsNames.z_SP);
+        return SharedPreferencesHelper.getInstance(context, SharedPrefsName.z_SP);
     }
 
 
