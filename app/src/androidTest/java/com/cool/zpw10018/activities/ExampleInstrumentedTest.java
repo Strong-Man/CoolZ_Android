@@ -1,4 +1,4 @@
-package com.cool.zpw10018.coolz_android;
+package com.cool.zpw10018.activities;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

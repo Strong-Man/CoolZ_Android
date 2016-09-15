@@ -1,9 +1,8 @@
-package com.cool.zpw10018.coolz_android;
+package com.cool.zpw10018.activities;
 
-import android.app.Activity;
 import android.os.Bundle;
 
-public class MainActivity extends Activity {
+public class MainActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
