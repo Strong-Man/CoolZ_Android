@@ -9,20 +9,22 @@
     tools:context="activities.MainActivity"
     tools:openDrawer="start">
 
-    <!--<include-->
-        <!--layout="@layout/app_bar_news"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="match_parent"/>-->
+    <include
+        android:id="@+id/main_content_view"
+        layout="@layout/main_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 
+    <!-- layout_gravity 为DrawerLayout属性 右侧滑则设置为 end 或 right，反之  -->
     <android.support.design.widget.NavigationView
-        android:id="@+id/nav_view"
+        android:id="@+id/main_nav_view"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        android:background="@color/container_background"
+        android:background="@color/gray"
         android:fitsSystemWindows="true"
-        app:headerLayout="@layout/nav_header_news"
-        app:itemTextColor="@color/primary_text"
+        app:headerLayout="@layout/nav_header_person_information"
+        app:itemTextColor="@color/font_normal"
         app:menu="@menu/activity_main_drawer"/>
 
 </android.support.v4.widget.DrawerLayout>
