@@ -12,10 +12,7 @@
         <item
             android:id="@+id/nav_video"
             android:title="video"/>
-        <!--        <item
-                    android:id="@+id/nav_about"
-                    android:icon="@drawable/ic_arrow_back"
-                    android:title="@string/about"/>-->
+
     </group>
 
     <item android:title="设置">
