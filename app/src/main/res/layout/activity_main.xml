@@ -25,6 +25,6 @@
         android:fitsSystemWindows="true"
         app:headerLayout="@layout/nav_header_person_information"
         app:itemTextColor="@color/font_normal"
-        app:menu="@menu/main_drawer_layout"/>
+        app:menu="@menu/main_drawer_menu"/>
 
 </android.support.v4.widget.DrawerLayout>
