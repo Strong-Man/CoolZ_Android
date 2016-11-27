@@ -2,6 +2,8 @@ package utils;
 
 import android.content.Context;
 
+import java.util.ArrayList;
+
 import utils.sp.SharedPreferencesHelper;
 import utils.sp.SharedPrefsName;
 
@@ -32,6 +34,10 @@ public class Utils {
 
     public static SharedPreferencesHelper getSpHelper(Context context) {
         return SharedPreferencesHelper.getInstance(context, SharedPrefsName.z_SP);
+    }
+
+    public static boolean isListHavaData(ArrayList list){
+        return  list != null && !list.isEmpty();
     }
 
 
