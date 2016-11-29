@@ -19,6 +19,8 @@ public abstract class BaseFragment extends Fragment {
 
     protected abstract int getLayoutId();
 
+    protected  abstract  void initBundle(Bundle bundle);
+
 
     @Nullable
     @Override
@@ -26,6 +28,7 @@ public abstract class BaseFragment extends Fragment {
         if(mFragmentView == null){
             mFragmentView = inflater.inflate(getLayoutId(), container, false);
             initViews(mFragmentView, getArguments());
+            initBundle(getArguments());
         }
 
         return mFragmentView;

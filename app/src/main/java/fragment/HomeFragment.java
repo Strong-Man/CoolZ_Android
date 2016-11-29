@@ -29,4 +29,12 @@ public class HomeFragment extends BaseFragment {
         return R.layout.home_fragment_layout;
     }
 
+    @Override
+    protected void initBundle(Bundle bundle) {
+        if(bundle != null){
+            String content = (String) bundle.get("textContent");
+            mContentTv.setText(content);
+        }
+    }
+
 }
