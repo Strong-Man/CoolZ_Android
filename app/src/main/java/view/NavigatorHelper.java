@@ -62,22 +62,6 @@ public class NavigatorHelper {
                 dispatchOnLeave(nextPosition, 1.0f - positionOffset, true, false);
                 dispatchOnEnter(position, 1.0f - positionOffset, true, false);
             }
-        } else {
-            for (int i = 0; i < mTotalCount; i++) {
-                if (i == mCurrentIndex) {
-                    continue;
-                }
-                boolean deselected = mDeselectedItems.get(i);
-                if (!deselected) {
-                    dispatchOnDeselected(i);
-                }
-                Float leavedPercent = mLeavedPercents.get(i, 0.0f);
-                if (leavedPercent != 1.0f) {
-                    dispatchOnLeave(i, 1.0f, false, true);
-                }
-            }
-            dispatchOnEnter(mCurrentIndex, 1.0f, false, true);
-            dispatchOnSelected(mCurrentIndex);
         }
         mLastPositionOffsetSum = currentPositionOffsetSum;
     }
@@ -117,7 +101,6 @@ public class NavigatorHelper {
     public void onPageSelected(int position) {
         mLastIndex = mCurrentIndex;
         mCurrentIndex = position;
-        dispatchOnSelected(mCurrentIndex);
         for (int i = 0; i < mTotalCount; i++) {
             if (i == mCurrentIndex) {
                 continue;
@@ -127,6 +110,7 @@ public class NavigatorHelper {
                 dispatchOnDeselected(i);
             }
         }
+        dispatchOnSelected(mCurrentIndex);
     }
 
     public void onPageScrollStateChanged(int state) {
